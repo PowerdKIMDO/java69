@@ -1,0 +1,15 @@
+package snippet;
+
+public class Snippet {
+	public static void main(String[] args) {
+		dVO = new DeptVO();
+		dVO.setDeptno(20);
+		dVO.setDname("RESEARCH");
+		dVO.setLoc("DALLAS");
+		System.out.println("=============================================");
+		System.out.println(dVO.getDeptno());
+		System.out.println(dVO.getDname());
+		System.out.println(dVO.getLoc());
+	}
+}
+

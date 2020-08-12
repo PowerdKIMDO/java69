@@ -1,0 +1,43 @@
+package game.baseball;
+
+import javax.swing.JFrame;//MVC패턴 적용된 패키지
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+
+import java.lang.String;
+
+public class MenuBarTest {
+	int width;//전역변수 선언해 보기 - JFrame의 가로길이를 담을 변수
+	int height;//전역변수 선언해 보기
+	//JMenuBar클래스를 활용하여 JFrame에 메뉴바를 구성할 수 있다.
+	JMenuBar jmb = new JMenuBar();
+	//JMenuBar에 추가할 JMenu를 생성한다.
+	JMenu     jm_file = new JMenu("File");
+	//
+	JMenuItem jmi_new = new JMenuItem("New");
+	JMenuItem jmi_open = new JMenuItem("Open");
+	JMenuItem jmi_exit = new JMenuItem("나가기");
+	JMenu    jm_edit = new JMenu("Edit");
+	//화면을 그리기
+	public void initDisplay() {
+		System.out.println("initDispaly 호출 성공");
+		//JAVA API를 활용하여 윈도우 운영체제에서 화면을 열기
+		//java.lang패키지를 제외한 모든 패키지는 반드시 import를 해주어야 해당 클래스를 JDK가 찾을 수 있다.
+		JFrame jf = new JFrame();
+		boolean isView;
+		isView = true;
+		int width=600;//지역변수이다.
+		//이 메소드는 non-static영역이다.
+		this.width=300;
+		this.height=400;
+		jf.setSize(width, width);
+		jf.setVisible(isView);//true-음악을 듣고 있을 때 false-음악을 듣고 있는데 전화가 들어온다.
+	}
+	public static void main(String[] args) {
+//내 안에 있는 메소드 이더라도 static영역에서 non-static 메소드를 호출하려면 반드시 인스턴스화
+		MenuBarTest mbt = new MenuBarTest();
+		mbt.initDisplay();
+	}//////////////end of main
+
+}

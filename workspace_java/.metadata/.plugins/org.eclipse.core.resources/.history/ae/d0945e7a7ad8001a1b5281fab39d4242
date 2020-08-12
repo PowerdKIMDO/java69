@@ -1,0 +1,19 @@
+package game.baseball;
+class Param{
+	int ival;
+}
+public class TestParam {
+	void effectParam(Param p) {
+		//p = new Param();
+		p.ival = 500;
+		System.out.println("sub ival===>");
+	}
+	public static void main(String[] args) {
+		TestParam tp = new TestParam();
+		Param p = new Param();
+		p.ival = 100;
+		tp.effectParam(p);
+		System.out.println("main ival===>");
+	}
+
+}

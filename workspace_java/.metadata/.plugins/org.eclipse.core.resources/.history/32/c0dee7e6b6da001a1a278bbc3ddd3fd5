@@ -1,0 +1,26 @@
+package book.ch4;
+
+public class FizzBuzzGame5 {
+	public void methodA() {
+		int i = 1;
+		//1부터 100까지 센다
+		//for(int i=start;i<=end;i++) {
+		while(i<101) {	
+			if((i%5==0)&&(i%7==0)) {
+				System.out.println("fizzbuzz");
+			}else if(i%5==0) {
+				System.out.println("fizz");				
+			}else if(i%7==0) {
+				System.out.println("buzz");				
+			}else {
+				System.out.println(i);
+			}
+			i = i + 1;
+		}///////////end of while	
+		//insert here - i값은 얼마?
+	}
+	public static void main(String[] args) {
+		FizzBuzzGame5 fbg = new FizzBuzzGame5();
+		fbg.methodA();
+	}//////////////end of main
+}//////////////////end of FizzBuzzGame1

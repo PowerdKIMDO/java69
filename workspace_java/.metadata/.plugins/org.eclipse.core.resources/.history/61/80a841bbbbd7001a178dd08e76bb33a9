@@ -1,0 +1,9 @@
+package report.ch4;
+
+public class RandomGame {
+
+	public static void main(String[] args) {
+		Random r = new Random();
+	}
+
+}

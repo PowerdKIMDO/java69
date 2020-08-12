@@ -1,0 +1,10 @@
+package game.baseball;
+
+public class MenuBarTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,31 @@
+package book.ch5;
+
+public class DeptVOSimulation {
+
+	public static void main(String[] args) {
+		DeptVO dVO = new DeptVO();
+		dVO.setDeptno(10);
+		dVO.setDname("ACCOUNTING");
+		dVO.setLoc("NEW YORK");
+		System.out.println(dVO.getDeptno());
+		System.out.println(dVO.getDname());
+		System.out.println(dVO.getLoc());
+	    dVO = new DeptVO();
+		dVO.setDeptno(20);
+		dVO.setDname("RESEARCH");
+		dVO.setLoc("DALLAS");
+		System.out.println("=============================================");
+		System.out.println(dVO.getDeptno());
+		System.out.println(dVO.getDname());
+		System.out.println(dVO.getLoc());
+		dVO = new DeptVO();
+		dVO.setDeptno(30);
+		dVO.setDname("SALES");
+		dVO.setLoc("CHICAGO");
+		System.out.println("=============================================");
+		System.out.println(dVO.getDeptno());
+		System.out.println(dVO.getDname());
+		System.out.println(dVO.getLoc());		
+	}
+
+}

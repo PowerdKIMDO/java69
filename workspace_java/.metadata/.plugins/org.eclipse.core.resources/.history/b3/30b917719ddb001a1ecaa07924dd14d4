@@ -1,0 +1,5 @@
+package oracle.jdbc;
+
+public class DBConnectionMgr {
+	public static final String _DRIVER = "oracle.jdbc.driver.OracleDriver";
+}

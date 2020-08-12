@@ -1,0 +1,16 @@
+package book.ch5;
+
+import javax.swing.JFrame;
+
+public class ObjectArray  extends JFrame {
+	public ObjectArray() {
+		initDisplay();
+	}
+	public void initDisplay() {
+		
+	}
+	public static void main(String[] args) {
+		new ObjectArray();	
+	}
+
+}

@@ -1,0 +1,17 @@
+package book.ch4;
+
+public class SwitchTest2 {
+
+	public static void main(String[] args) {
+		int i = 0;
+		switch(i) {
+		case 0:{
+			int i = 5;
+			
+		}break;
+		default:
+			break;
+		}
+	}
+
+}

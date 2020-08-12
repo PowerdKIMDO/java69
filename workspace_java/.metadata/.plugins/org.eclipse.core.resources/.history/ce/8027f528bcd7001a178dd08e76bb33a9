@@ -1,0 +1,20 @@
+package report.ch4;
+
+import java.util.Random;
+
+public class RandomGame {
+
+	public static void main(String[] args) {
+		Random r = new Random();
+		boolean isStop = false;
+		int i=1;
+		while(!isStop) {
+			int num = r.nextInt(10);
+			if(i>5) {
+				break;
+			}
+			i++;
+		}
+	}
+
+}

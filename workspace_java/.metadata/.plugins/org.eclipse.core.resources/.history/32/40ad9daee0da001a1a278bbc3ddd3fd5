@@ -1,0 +1,13 @@
+package book.ch5;
+
+public class DeptVOSimulation {
+
+	public static void main(String[] args) {
+		DeptVO dVO = new DeptVO();
+		dVO.setDeptno(10);
+		dVO.setDname("ACCOUNTING");
+		dVO.setLoc("NEW YORK");
+
+	}
+
+}

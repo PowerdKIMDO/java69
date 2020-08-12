@@ -1,0 +1,20 @@
+package book.ch5;
+
+import javax.swing.JFrame;
+//오늘 부터는 되도록이면 메인 메소드에 코딩을 하지 않는다.
+//한번에 어렵다면 조금씩 부피를 줄여본다.
+//생성자는 의존관계를 실제로 표현할 수 있다. - 클래스 쪼개기 연습시 꼭 활용해 볼것.
+//static은 사용하지 말것.
+//while문 i=i+1; break; for문안에 break;
+//반드시 무한루프 방지 코드를 작성할 것.
+public class DeptManager extends JFrame {
+	//역할은 전변에 초기화를 대신 해줌.- 그래서 생략이 가능하다.
+	//지변은 초기화를 반드시 해야 됨.
+	public DeptManager() {//디폴트 생성자는 생략할 수 있다.
+		System.out.println("디폴트 생성자 ");
+	}
+	public static void main(String[] args) {
+		new DeptManager();
+	}
+
+}

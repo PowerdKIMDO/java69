@@ -1,0 +1,35 @@
+package report.ch4;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.Random;
+
+public class RandomGame {
+
+	public static void main(String[] args) {
+		Random r = new Random();
+		BufferedReader br = 
+				new BufferedReader(
+						new InputStreamReader(System.in));
+		System.out.println("0부터 9사이의 숫자를 하나 입력하세요.");
+		String str = null;
+		while((str=br.readLine())!=null) {
+			
+		}
+	}
+
+}
+
+
+/*
+boolean isStop = false;
+int i=1;
+while(!isStop) {
+	int num = r.nextInt(10);
+	System.out.println(num);
+	if(i>5) {
+		break;
+	}
+	i++;
+}
+*/

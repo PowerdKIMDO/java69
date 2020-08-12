@@ -1,0 +1,11 @@
+package oracle.db;
+
+public class StringTest {
+
+	public static void main(String[] args) {
+		String msg = "hello";
+		msg =msg.replace('e', 'o');
+		System.out.println(msg);
+	}
+
+}

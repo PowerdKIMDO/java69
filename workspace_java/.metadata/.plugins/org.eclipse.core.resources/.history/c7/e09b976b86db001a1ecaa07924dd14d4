@@ -1,0 +1,10 @@
+package book.ch5;
+
+public class Pride {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
